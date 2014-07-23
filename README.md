@@ -23,13 +23,13 @@ The **“ConvertImage-se6.jar”** and **“ConvertImage-se7.jar”** are non-Ma
 2. Go to folder "test" and create another folder call "input"
 3. Pleace the input images in "test"
 4. Go back to Hadoop root dir and use the following command 
-```sh
+```
 bin/hadoop jar ConvertImagesMapReduce-SE#.jar andrewy.ConvertImages test/ test/output
 ```
 
 ####To Run the non-MapReduce Focus-Area-Detector:
 Just use the following command, output images will be created in a new folder "test/output"
-```java
+```
 java -cp ConvertImage-se#.jar andrewy.ConvertImage [image name]
 ```
 
