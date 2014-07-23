@@ -17,7 +17,7 @@ This is the main task: Calculating the difference of the RGB value between (p1, 
 The Hadoop framework ([download here](http://hadoop.apache.org)) is required to run this program. 
 This program is implemented using **`Hadoop 1.1.1`**
 
-In the jar folder, **“ConvertImagesMapReduce-SE6.jar”** and **“ConvertImagesMapReduce-SE7.jar”** are the MapReduce Focus-Area-Detector, they will read all the images in the input folder, create temporary text-based file for mapper, highlight the in-focus area and calculate the final scores. 
+In the jar folder, **“ConvertImagesMapReduce-SE6.jar”** and **“ConvertImagesMapReduce-SE7.jar”** are the MapReduce Focus-Area-Detector. Both will read all the images in the input folder, create temporary text-based file for mapper, highlight the in-focus area and calculate the final scores. 
 
 The **“ConvertImage-se6.jar”** and **“ConvertImage-se7.jar”** are non-MapReduce Focus-Area-Detector designed for processing large images (larger than 6000x4000, 24 mega pixels), since the text-based file created by the builder will be very HUGE and the MapReduce process can easily consume lots of free memory. (*performance issue*)  
 <br />  
