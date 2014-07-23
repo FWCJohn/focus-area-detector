@@ -68,7 +68,7 @@ public class ConvertImage {
 		System.out.print("completed");
 		System.out.println("\nTotal score: " + score + "\n");
 		
-		File file = new File("cs755-project-sample//output//" + fileName.replaceFirst("[.][^.]+$", "") + "-out.jpg");
+		File file = new File("test/output//" + fileName.replaceFirst("[.][^.]+$", "") + "-out.jpg");
 		file.getParentFile().mkdirs();
 		ImageIO.write(input, "jpg", file);
 	}
