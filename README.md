@@ -1,7 +1,7 @@
 focus-area-detector
 ===================
 The Focus Area Detector is a cloud-based program capable of distinguishing the difference between a sharp line and a blurred line, and can highlight in-focus areas of the input images.
-
+<br />  
 ###About the Project
 The program is implemented using Hadoop MapReduce framework, it can be configured and deployed to a computer cluster or the cloud. The main task of this program involves calculating the difference of the RGB value between any two consecutive pixels, it is CPU intensive, but the computation can be broken into multiple small tasks and can be processed more efficiently using distributed system.
 
@@ -10,8 +10,7 @@ If an object is *[well-focused](img/thumbnails/detector-1-thumbnail.png)* in the
 This is the main task: Calculating the difference of the RGB value between (p1, p2), and (p1, p3).
   
 ![alt tag](img/thumbnails/detector-3-thumbnail.png)  
-  
-  
+<br />  
 ###Getting Started
 The Hadoop framework ([download here](http://hadoop.apache.org)) is required to run this program. 
 This program is implemented using **`Hadoop 1.1.1`**
