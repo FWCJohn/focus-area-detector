@@ -35,4 +35,3 @@ Just use the following command, output images will be created in a new folder "t
 java -cp ConvertImage-se#.jar andrewy.ConvertImage [image name]
 ```  
 <br />  
-Any feedback is welcome :)  Please kindly provide your ideas at andrewy.dev@gmail.com
