@@ -5,14 +5,14 @@ The Focus Area Detector is a cloud-based program capable of distinguishing the d
 ###About the Project
 The program is implemented using Hadoop MapReduce framework, it can be configured and deployed to a computer cluster or the cloud. The main task of this program involves calculating the difference of the RGB value between any two consecutive pixels, it is CPU intensive, but the computation can be broken into multiple small tasks and can be processed more efficiently using distributed system.
 
-If an object is *[well-focused](img/thumbnails/detector-1-thumbnail.png)* in the picture, the details on that object should be sharp and clear because the pixel's RGB value in that area changes rapidly. If the object *[out of focus](img/thumbnails/detector-2-thumbnail.png)*, that area seems blurred because the value changes gradually. 
+If an object is *[well-focused](img/thumbnails/detector-1-thumbnail.png)* in the picture, the details on that object should be sharp and clear because the pixel's RGB value in that area changes rapidly. If the object is *[out of focus](img/thumbnails/detector-2-thumbnail.png)*, that area seems blurred because the value changes gradually. 
 
-This is the main task: Calculating the difference of the RGB value between (p1, p2), and (p1, p3).
+The main task is to calculate the difference of the RGB value between (p1, p2), and (p1, p3).
   
 ![alt tag](img/thumbnails/detector-3-thumbnail.png)  
 <br />  
 ###Getting Started
-The Hadoop framework ([download here](http://hadoop.apache.org)) is required to run this program. 
+The Hadoop framework ([download here](http://hadoop.apache.org)) is required. 
 This program is implemented using **`Hadoop 1.1.1`**
 
 In the jar folder, **“ConvertImagesMapReduce-SE6.jar”** and **“ConvertImagesMapReduce-SE7.jar”** are the MapReduce Focus-Area-Detector. Both will read all the images in the input folder, create temporary text-based file for mapper, highlight the in-focus area and calculate the final scores. 
